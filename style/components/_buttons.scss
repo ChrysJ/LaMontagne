@@ -1,0 +1,43 @@
+.btn, button[type="submit"], .nav a, .social-media-contact i {
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.btn, button[type="submit"]{
+    font-size: 14px;
+    letter-spacing: 3px;
+    padding: 15px 40px;
+    background: transparent;
+    &:hover{
+    color: $color1;
+}
+}
+
+// ----------------BTN full story
+
+.btn{
+    color: $color2;
+    border: $color2 2px solid;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    &:hover{
+        background-color: $color2;
+    }
+}
+
+// ----------------BTN contact
+
+button[type="submit"]{
+    border: $color4 2px solid;
+    color: $color4;
+    &:hover{
+        background-color: $color4;
+    }
+}
+
+// ----------------BTN social medias
+
+.ctn-social-medias a:hover {
+    color: $color2;
+}

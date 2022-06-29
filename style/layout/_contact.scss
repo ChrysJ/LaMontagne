@@ -1,0 +1,119 @@
+.ctn-contact{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-bottom: 100px;
+    background-color: $color5;
+    @media screen and (max-width : 1200px) {
+        grid-template-columns: 100%;
+    }
+#left-contact{
+    position: relative;
+    padding: 65px 60px;
+    &::after{
+        content: '';
+        width: 1px;
+        height: 100%;
+        background-color: $color3;
+        position: absolute;
+        right: 0;
+        top: 0;
+        @media screen and (max-width : 950px) {
+            display: none;
+        }
+    }
+}
+
+//  --------------- CONTACT left
+    #left-contact div{
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    label{
+        margin-bottom: 20px;
+        letter-spacing: 2px;
+        font-size: 15px;
+    }
+
+    input, textarea{
+        margin-bottom: 30px;
+        width: 100%;
+        background: transparent;
+        border: $color3 1px solid;
+        border-radius: 7px;
+        padding: 10px;
+
+        &:focus{
+            border: $color2 1px solid;
+        }
+    }
+    input{
+        height: 50px;
+    }
+    textarea{
+        height: 150px;
+        resize: none;
+    }
+
+//  --------------- CONTACT right
+#right-contact{
+display: grid;
+grid-template-columns: 100%;
+}
+#right-contact div {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-rows: 150px;
+    align-items: center;
+    
+
+    &:first-child{
+        padding-top: 0;
+        @media screen and (max-width : 1200px) {
+            border-top: $color3 1px solid;
+        }
+    }
+&:not(:first-child){
+border-top: $color3 1px solid;
+}
+}
+
+h4 {
+    font-size: 15px;
+    letter-spacing: 2px;
+    margin-left: 60px;
+    @media screen and ( max-width : 500px) {
+        margin-left: 10px;
+    }
+}
+p, a{
+    font-size: 16px;
+    line-height: 30px;
+}
+
+a{
+    font-family: $font2;
+    text-transform: none;
+}
+}
+.social-media-contact{
+display:flex;
+li{
+margin-right: 15px;
+}
+    i{
+        @include center;
+        height: 45px;
+        width: 45px;
+        color: $color2;
+        font-size:20px;
+        border: $color3 1px solid;
+        padding: 20px;
+        border-radius: 50%;
+
+        &:hover{
+            background-color: $color3;
+        }
+    }
+}

@@ -1,0 +1,54 @@
+// ----------------NAV
+
+.nav{
+    background-color: #f3f3f335;
+    height: 80px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    @include center;
+    justify-content: space-between;
+    ul, a{
+        @include center;
+    }
+    ul {
+        @media screen and (max-width : 1000px) {
+            display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    }
+// ----------------NAV RIGHT
+.menu{
+#active, a:hover{
+    background-color: $color5;
+}
+    a{
+        font-size: 14px;
+            padding: 0 25px;
+            height: 80px;
+            color: $color1;
+            letter-spacing: 3px;
+            text-align: center;
+            @media screen and (max-width : 500px) {
+                font-size: 10px;
+                padding: 0;
+            }
+    }
+    a:hover{
+        color:$color2;
+    }
+}
+
+// ----------------NAV 
+.ctn-social-medias{
+    i{
+        font-size: 25px;
+    }
+    li{
+        padding: 30px;
+    }
+    @media screen and (max-width : 1000px) {
+        display: none;
+    }
+}
+}

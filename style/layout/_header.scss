@@ -1,0 +1,44 @@
+// ----------------NAV
+
+.header{
+    height: 100vh;
+    position: relative;
+}
+.ctn-header{
+    @include center;
+    flex-direction: column;
+    height: 90%;
+
+h1{
+    font-size: 4em;
+    @media screen and (max-width : 750px) {
+        font-size: 2em;
+    }
+}
+
+    p{
+        text-align: center;
+        margin: 5% 0;
+        @media screen and (max-width : 750px) {
+            margin: 10% 0;
+        }
+        @media screen and (max-width : 500px) {
+            margin: 10% 0 20%;
+        }
+    }
+
+    // ----------------INDEX SCROLL
+    a{
+        @include center;
+        height: 50px;
+        width: 50px;
+        border: 2px solid $color1;
+        border-radius: 50%;
+        padding: 30px;
+        position:relative;
+    }
+
+    i{
+        font-size: 1.2em;
+        }
+    }

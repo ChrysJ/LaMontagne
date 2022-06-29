@@ -1,0 +1,86 @@
+// ----------------FONT
+
+@font-face {
+    font-family: "font1";
+    src: url(../assets/font/Inter-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: "font2";
+    src: url(../assets/font/Merriweather-Light.ttf);
+}
+
+$font1 : font1, sans-serif;
+$font2 : font2, serif;
+
+// ----------------COLOR
+$color1 : #F3F3F3;
+$color2 : #0F0F0F;
+$color3 : #d1d1d1;
+$color4 : #6C6A69;
+$color5 : #E9E9E9;
+
+// ----------------MIXIN CENTER
+@mixin center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//  ----------------RESET CSS
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+//  ----------------BODY
+body{
+    background: url(../assets/img/bg.jpg) fixed center / cover;
+    width: 70%;
+    max-width: 1500px;
+    margin: 0 auto;
+    @media screen and (max-width : 750px) {
+        width: 90%;
+}
+}
+//  ---------------- STYLE TEXT
+h1, h2, h3, h4, label, a, .info-contact, button[type="submit"]{
+    font-family: $font1;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: $font2;
+    font-size: 18px;
+    line-height: 40px;
+}
+
+h1, nav ul li a, .ctn-header p, .ctn-header a,  .ctn-header a:visited {
+    color: $color1;
+}
+
+h2, h3, p, #active, .btn {
+    color: $color2;
+}
+
+label, .info-contact, .ctn-contact h4, .ctn-contact p, .ctn-contact a{
+    color: $color4;
+}
+//  ----------------TITLE
+h1, h2, h3 {
+    text-align: center;
+}
+h1{
+    letter-spacing: 5px;
+    line-height: 90px;
+    @media screen and (max-width : 750px) {
+        line-height: 50px;
+    }
+}
+    h2, h3 {
+        letter-spacing: 3px;
+    }
